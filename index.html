@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Craymor_Studio</title>
+</head>
+<body>
+	<header><a href="https://www.youtube.com/@Craymorik">Craymor Studio</a></header>
+	<audio id="music" src="./Godot.mp3" loop></audio>
+	<button onclick="document.getElementById('music').play()">
+    	🎵 Включить музыку
+	</button>
+
+	<button onclick="document.getElementById('music').pause()">
+    	🔇 Выключить музыку
+	</button>
+	<hr>
+	<div id = "menu">
+		<li><a href = "https://store.steampowered.com/?l=russian">магазин</a></li>
+		<li><a href = "https://store.steampowered.com/?l=russian">библиотека</a></li>
+	</div>
+	<a href="https://store.steampowered.com/?l=russian"><img src ="https://shared.akamai.steamstatic.com/community_assets/images/steamworks_docs/russian/Header_1.jpg" id="banner"></a>
+	<div id = "games">
+		<a href="https://store.steampowered.com/app/1671210/DELTARUNE/"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202504/1011/e9bddb129274330304a5e0e49431c7d984dfbeeaf0975674.png"></a>
+		<a href="https://store.steampowered.com/app/388090/Five_Nights_at_Freddys_4/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrCdDag7aQ5XfhhK2YDjtWw3BV57FV8FnZeB4KIaXxjDlOJjx2Q7HID4&s=10"></a>
+		<a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_O9ORjSOF8_LuT3VQ4guUQ1QHlQL4NSyl5kFVAnEng&s=10"></a>
+		<a href="https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/"><img src="https://store-images.s-microsoft.com/image/apps.65104.14157056169306105.30ae0432-c36b-42e7-9bbb-f85189243ca3.8e302653-b1b3-4ef9-b328-6a0822123e0c"></a>
+		<a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9WxXIamhlHC2qQOHDu_wtSGxhJT5-_fugjMrSEWskGEyMKUgJq65B-Y&s=10"></a>
+		<a href="https://store.steampowered.com/app/787480/Phoenix_Wright_Ace_Attorney_Trilogy/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLQQyuw-yPmOcYxxG-SaBDRMMb7RcEOf6DTQuNqs6PQ&s=10"></a>
+		<a href="https://store.steampowered.com/app/367520/Hollow_Knight/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7c5vG8Gm0FX65zJhq3DATdTOT8dgAiSFYsYrpCCviAm8uXXV7ZftPIA&s=10"></a>
+	</div>
+	<hr>
+	<div id = "category">
+		<li><a href="https://store.steampowered.com/category/horror">Хоррор</a></li>
+		<li><a href="https://store.steampowered.com/category/visual_novel">Новеллы<a></li>
+		<li><a href="https://store.steampowered.com/category/racing">Гонки<a></li>
+		<li><a href="https://store.steampowered.com/category/sports">Спорт<a></li>
+		<li><a href="https://store.steampowered.com/category/fighting_martial_arts">Файтинги<a></li>
+		<li><a href="https://store.steampowered.com/category/action">Экшен<a></li>
+	</div>
+	<hr>
+	<div id = "end">
+		<li><a href="https://www.youtube.com/@Craymorik">YouTube</a></li>
+		<li><a href="https://t.me/craymor_fsg">Telegram</a></li>
+		<li><a href="https://steamcommunity.com/profiles/76561199468820246">Craymor</a></li>
+		<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Мой код</a></li>
+	</div>
+</body>
+</html>
+<style>
+	*{
+	padding: 0px;
+	margin: 0px;
+}
+	body{
+		margin: 0;
+		background-color: black;
+	}
+	header{
+		background-color: black;
+		width: 100%;
+		height: 8vh;
+		color: white;
+		text-decoration: underline;
+		font-size: 50px;
+		cursor: pointer;
+	}
+	header a:hover{
+		color: greenyellow;
+	}
+	#menu a:hover{
+		background-color: greenyellow;
+		text-decoration: underline;
+		cursor: pointer;
+		opacity: 80%;
+	}
+	a{
+		transition: all 0.5s linear 0.5s;
+		color: white;
+	}
+	#menu{
+		width: 100%;
+		height: 5vh;
+		background-color: black;
+		text-align: center;
+	}
+	#menu li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	text-indent: 40px;
+}
+
+	#games img:hover{
+		transform: scale(2.0, 2.0);
+	}
+	#games {
+    width: 100%;
+    min-height: 35vh;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+	#games img {
+    width: 220px;
+    height: 280px;
+    object-fit: contain;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    max-width: 90%;
+    transition: all 0.75s ease-in 0s;
+}
+
+	#category{
+		background-color: black;
+		text-align: center;
+	}
+	#category li{
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+	font-size: 40px;
+	color: lightcyan;
+	text-align: center;
+	}
+	#category li:hover{
+		text-decoration: underline;
+		transition: all 0.5s linear 0s;
+		cursor: pointer;
+		background-color: darkblue;
+	}
+	hr{
+		background-color: lightcyan;
+	}
+	#end li{
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	text-indent: 40px;
+	color: lightcyan;
+	text-align: left;
+	transition: all 1s ease-in 0s;
+	}
+	#end li:hover{
+		background-color: red;
+		cursor: pointer;
+	}
+	#end{
+		width: 100%;
+		height: 20vh;
+		background-color: black;
+	}
+	button{
+		float: right;
+	}
+	#banner{
+		display: block;
+		margin: 0 auto;
+		cursor: pointer;
+		width: 100%;
+	}
+	body > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+	button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid lightcyan;
+    border-radius: 4px;
+    background-color: #202020;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+</style>
